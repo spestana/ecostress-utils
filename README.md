@@ -1,2 +1,2 @@
 # ecostress-utils
-Some scripts for working with NASA JPL ECOSTRESS data
+Some scripts for managing NASA JPL ECOSTRESS files
