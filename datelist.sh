@@ -1,6 +1,15 @@
 #!/bin/bash
 
-for f in *; do
+if [ -z "$1" ]
+    then
+        SEARCH_DIR=$(pwd) 
+    else
+        SEARCH_DIR=$1
+fi
+
+echo "$SEARCH_DIR"
+
+for f in "$SEARCH_DIR"/*.tif; do
     YEAR=$(echo $f | cut -d'_' -f6 | cut -c1-4)
     MONTH=$(echo $f | cut -d'_' -f6 | cut -c5-6) 
     DAY=$(echo $f | cut -d'_' -f6 | cut -c7-8) 
