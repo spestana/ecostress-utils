@@ -7,8 +7,8 @@ if [ -z "$1" ]
         SEARCH_DIR=$1
 fi
 
-echo "Date/Time of ECOSTRESS observations in $SEARCH_DIR" >> datelist.txt
-
+echo "Date/Time of ECOSTRESS observations in $SEARCH_DIR" >> ecostress_datelist.csv
+echo "file, day, month, year, time" >> ecostress_datelist.csv
 for f in "$SEARCH_DIR"/*.tif; do
     YEAR=$(echo $f | cut -d'_' -f6 | cut -c1-4)
     MONTH=$(echo $f | cut -d'_' -f6 | cut -c5-6) 
@@ -16,5 +16,5 @@ for f in "$SEARCH_DIR"/*.tif; do
     HR=$(echo $f| cut -d'_' -f6 | cut -c10-11)
     MIN=$(echo $f | cut -d'_' -f6 | cut -c12-13)
     SEC=$(echo $f | cut -d'_' -f6 | cut -c14-15)
-    echo "${DAY} ${MONTH} ${YEAR}  ${HR}:${MIN}:${SEC}" >> ecostress_datelist.txt
+    echo "${f}, ${DAY}, ${MONTH}, ${YEAR},  ${HR}:${MIN}:${SEC}" >> ecostress_datelist.csv
 done
