@@ -1,2 +1,5 @@
 # ecostress-utils
-Some scripts for working with NASA JPL ECOSTRESS data
+#### Some scripts for managing NASA JPL ECOSTRESS files
+---
+* **download-ecostress.sh**: download h5 files after staging through Earthdata
+* **datelist.sh**: get a list of observations date/times from ECOSTRESS filenames
