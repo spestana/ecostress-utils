@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Usage: ./datelist.sh <SEARCH_DIR> <OUT_FILE>
+
 if [ -z "$1" ]
     then
         SEARCH_DIR=$(pwd) 
