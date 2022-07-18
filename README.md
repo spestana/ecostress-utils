@@ -2,6 +2,8 @@
 
 My notes, tips, and tricks for using ECOSTRESS imagery.
 
+* [Jupyter notebook](pixel-size-calc.ipynb) for estimating pixel sizes for off-nadir pointing.
+
 ## My scripts for managing NASA JPL ECOSTRESS files
 
 * **download-ecostress.sh**: download h5 files after staging through Earthdata
