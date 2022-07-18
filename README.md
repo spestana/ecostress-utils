@@ -2,7 +2,7 @@
 
 My notes, tips, and tricks for using ECOSTRESS imagery.
 
-* [Jupyter notebook](pixel-size-calc.ipynb) for estimating pixel sizes for off-nadir pointing.
+* [Jupyter notebook](pixel-size-calc.ipynb) for estimating pixel sizes for off-nadir pointing (or [view it here](https://nbviewer.org/github/spestana/ecostress-utils/blob/master/pixel-size-calc.ipynb)).
 
 ## My scripts for managing NASA JPL ECOSTRESS files
 
